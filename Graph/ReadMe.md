@@ -10,4 +10,11 @@ Then it recursively visits all unvisited neighbors.
 DFS function: The function that initiates the DFS traversal. It creates a visited vector (initialized to false) to track which nodes have been visited. It then calls DFSUtil for the starting vertex.
 Output:
 If you run the code, the output will be a DFS traversal of the graph starting from vertex 0, such as:
+# Graphs in C++
+
+- **Definition:** A graph is a collection of nodes connected by edges.
+- **Representation:**
+  - Adjacency List
+  - Adjacency Matrix
+
 
