@@ -1,29 +1,32 @@
-#include<iostream>
-using namespace std;
+#include <iostream>
 
-int main(){
-    int n1,n2;
-    cin>>n1>>n2;
+int main() {
     char op;
-    cin>>op;
-    switch(op){
+    float num1, num2;
+
+    std::cout << "Enter operator (+, -, *, /): ";
+    std::cin >> op;
+
+    std::cout << "Enter two operands: ";
+    std::cin >> num1 >> num2;
+
+    switch(op) {
         case '+':
-        cout<<n1+n2<<endl;
-        break;
+            std::cout << num1 + num2;
+            break;
         case '-':
-        cout<<n1-n2<<endl;
-        break;
+            std::cout << num1 - num2;
+            break;
         case '*':
-        cout<<n1*n2<<endl;
-        break;
+            std::cout << num1 * num2;
+            break;
         case '/':
-        cout<<n1/n2<<endl;
-        break;
-        case '%':
-        cout<<n1%n2<<endl;
-        break;
+            std::cout << num1 / num2;
+            break;
         default:
-        cout<<"Invalid operator"<<endl;
+            std::cout << "Error! operator is not correct";
+            break;
     }
+
     return 0;
 }
